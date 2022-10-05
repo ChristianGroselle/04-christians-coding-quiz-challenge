@@ -1,0 +1,134 @@
+:root {
+    --darkBG: #141035;
+    --darkTxt: #fff;
+
+    --lightBG: #fff;
+    --lightTxt: #000;
+
+}
+
+header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 1%;
+    background-color: #13293d;
+    color: #fff;
+  }
+
+h1 {
+    font-size: 3.5rem;
+    margin: 2rem;
+}
+
+main {
+    background-color: var(--lightBG);
+    color: var(--lightTxt);
+}
+
+button {
+    padding: 1% 2%;
+    color: #fff;
+    background-color: #13293d;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: var(--darkBG);
+    color: var(--darkTxt);
+    margin-top: auto;
+  }
+
+  .container {
+    display: flex;
+    width: 60ch;
+    height: 60vh;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    /* display: flex; */
+    /* flex: 1 1 400; */
+    /* align-items: center;
+    justify-content: center;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: var(--darkBG);
+    width: 400px;
+    height: 400px;
+    padding: 10px; */
+    /* margin: 5rem; */
+    /* margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto; */
+    
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    /* height: 100%; */
+    padding: 10px;
+    /* flex: 0 0 300px; */
+    
+    /* margin: 20px; */
+  }
+
+  .card li {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+  }
+
+
+  .flex-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-row select {
+    flex: 1 0 0;
+    margin-left: 2%;
+  }
+  
+  .flex-row input {
+    margin-right: 2%;
+  }
+  
+  /* The font style of the adjacent element changes when the given element is checked */
+  .checkbox:checked + label {
+    color: #999999;
+    font-style: italic;
+  }
+  
+  /* When checked, the adjacent element has text insert at the end */
+  .checkbox:checked + label::after {
+    margin-left: 10px;
+    font-size: 90%;
+    content: "(thanks!)";
+  }
+
+
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  }
