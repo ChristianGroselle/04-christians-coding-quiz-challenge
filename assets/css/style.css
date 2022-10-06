@@ -98,6 +98,9 @@ button {
     display: flex;
   }
 
+  main button {
+    margin: 5px;
+  }
 
   .flex-row {
     display: flex;
